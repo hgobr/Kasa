@@ -1,24 +1,48 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import KasaLogoHeader from '../../assets/img/KasaLogoHeader.svg';
 import './Header.scss';
 
 export default function Header() {
+  const location = useLocation();
+
   return (
-    <div className="header">
+    <header className="header">
+      <div className="logoContainer">
+        <Link to="/">
+          <img src={KasaLogoHeader} alt="KasaLogoHeader" />
+        </Link>
+      </div>
       <nav>
         <ul>
           <li>
-            <Link style={{ color: '#FF6060' }} to="/">
-              Home
+            <Link
+              style={{
+                color: '#FF6060',
+                textDecoration: 'none',
+                borderBottom:
+                  location.pathname === '/' ? '2px solid #FF6060' : 'none',
+              }}
+              to="/"
+            >
+              Accueil
             </Link>
           </li>
           <li>
-            <Link style={{ color: '#FF6060' }} to="/about">
-              About
+            <Link
+              style={{
+                color: '#FF6060',
+                textDecoration: 'none',
+                borderBottom:
+                  location.pathname === '/about' ? '2px solid #FF6060' : 'none',
+              }}
+              to="/about"
+            >
+              A Propos
             </Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }

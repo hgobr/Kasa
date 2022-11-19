@@ -1,9 +1,26 @@
+@import '../../styles/style.scss';
+
 .header {
-  li {
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    font-weight: bold;
+  @include pageMargin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+
+  img {
+    width: 150px;
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+
+    li {
+      text-decoration: none;
+      list-style: none;
+      display: inline-block;
+      font-weight: 600;
+      font-size: medium;
+    }
   }
 }
