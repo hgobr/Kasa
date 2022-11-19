@@ -1,0 +1,13 @@
+@import '../../styles/style.scss';
+
+.tag {
+  p {
+    font-size: 13px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: $primaryRed;
+    display: inline-block;
+    color: #fff;
+  }
+}

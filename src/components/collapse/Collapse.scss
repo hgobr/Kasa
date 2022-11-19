@@ -1,0 +1,36 @@
+@import '../../styles/style.scss';
+
+.collapse {
+  button {
+    font-family: inherit;
+    font-size: inherit;
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    padding: 10px 20px;
+
+    background-color: $primaryRed;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 0;
+  }
+
+  .active {
+    &:hover {
+      background-color: #555;
+    }
+  }
+
+  .content {
+    width: 70%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+
+    p {
+      padding: 0 5px;
+    }
+  }
+}

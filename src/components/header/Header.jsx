@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import KasaLogoHeader from '../../assets/img/KasaLogoHeader.svg';
 import './Header.scss';
+import '../../styles/style.scss';
 
 export default function Header() {
   const location = useLocation();
