@@ -14,16 +14,13 @@ export default function Home() {
         <Tag name="home-page" />
         <Collapse
           button="Équipements"
-          // content="Climatisation
-          //          Wi-Fi
-          //           Cuisine
-          //           Espace de travail
-          //           Fer à repasser
-          //           Sèche-cheveux
-          //           Cintres"
-          content={
-            'Climatisation \n Wi-Fi\nCuisine\nEspace de travail\nFer à repasser\n Sèche-cheveux\nCintres'
-          }
+          line1="Climatisation"
+          line2="Wi-Fi"
+          line3="Cuisine"
+          line4="Espace de travail"
+          line5="Fer à repasser"
+          line6="Sèche-cheveux"
+          line7="Cintres"
         />
       </div>
       <Footer />
