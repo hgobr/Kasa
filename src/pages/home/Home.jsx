@@ -2,6 +2,7 @@ import React from 'react';
 import Collapse from '../../components/collapse/Collapse';
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
+import Banner from '../../components/banner/Banner';
 import Tag from '../../components/tag/Tag';
 import './Home.scss';
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <div className="container">
         <h1>Home</h1>
+        <Banner source="home" />
         <Tag name="home-page" />
         <Collapse
           button="Équipements"
