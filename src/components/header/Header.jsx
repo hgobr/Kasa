@@ -22,7 +22,7 @@ export default function Header() {
                 color: '#FF6060',
                 textDecoration: 'none',
                 borderBottom:
-                  location.pathname === '/' ? '2px solid #FF6060' : 'none',
+                  location.pathname === '/' ? '3px solid #FF6060' : 'none',
               }}
               to="/"
             >
@@ -35,7 +35,7 @@ export default function Header() {
                 color: '#FF6060',
                 textDecoration: 'none',
                 borderBottom:
-                  location.pathname === '/about' ? '2px solid #FF6060' : 'none',
+                  location.pathname === '/about' ? '3px solid #FF6060' : 'none',
               }}
               to="/about"
             >

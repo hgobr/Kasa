@@ -1,0 +1,9 @@
+@import '../../styles/style.scss';
+
+.rate {
+  color: #e3e3e3;
+  font-size: 30px;
+  .rateStar {
+    color: $primaryRed;
+  }
+}

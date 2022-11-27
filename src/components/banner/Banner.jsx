@@ -9,8 +9,9 @@ export default function Banner(props) {
     <div className="banner">
       <img
         src={props.source === 'home' ? HomeBanner : AboutBanner}
-        alt="HomeBanner"
+        alt={props.source === 'home' ? 'HomeBanner' : 'AboutBanner'}
       />
+      <h1>{props.source === 'home' ? 'Chez vous, partout et ailleurs' : ''}</h1>
     </div>
   );
 }

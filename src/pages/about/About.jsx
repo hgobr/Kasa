@@ -10,7 +10,6 @@ export default function About() {
     <div className="about">
       <Header />
       <div className="container">
-        <h1>About</h1>
         <Banner source="about" />
         <Tag name="about-page" />
       </div>

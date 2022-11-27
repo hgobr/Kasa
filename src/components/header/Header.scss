@@ -5,10 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 35px;
+  margin-bottom: 50px;
 
   img {
-    width: 150px;
+    width: 160px;
   }
 
   ul {
@@ -21,7 +22,7 @@
       list-style: none;
       display: inline-block;
       font-weight: 600;
-      font-size: medium;
+      font-size: 18px;
 
       &::after {
         content: '';
