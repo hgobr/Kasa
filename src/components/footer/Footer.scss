@@ -1,5 +1,4 @@
 .footer {
-  position: sticky;
   bottom: 0;
   width: 100%;
 
@@ -9,17 +8,18 @@
   justify-content: center;
 
   background-color: black;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  margin-top: 50px;
 
   img {
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 10px;
-    width: 100px;
+    width: 110px;
   }
 
   p {
     color: white;
     padding: 10px;
-    font-size: 15px;
+    font-size: 16px;
   }
 }

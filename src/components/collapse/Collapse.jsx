@@ -31,13 +31,36 @@ export default function Collapse(props) {
         />
         <button onClick={onPress}>{props.button}</button>
         <div className="content">
-          <p>{props.line1}</p>
-          <p>{props.line2}</p>
-          <p>{props.line3}</p>
-          <p>{props.line4}</p>
-          <p>{props.line5}</p>
-          <p>{props.line6}</p>
-          <p>{props.line7}</p>
+          {props.line1 && (
+            <p style={{ padding: props.padding }}>{props.line1}</p>
+          )}
+          {props.line2 && (
+            <p style={{ padding: props.padding }}>{props.line2}</p>
+          )}
+          {props.line3 && (
+            <p style={{ padding: props.padding }}>{props.line3}</p>
+          )}
+          {props.line4 && (
+            <p style={{ padding: props.padding }}>{props.line4}</p>
+          )}
+          {props.line5 && (
+            <p style={{ padding: props.padding }}>{props.line5}</p>
+          )}
+          {props.line6 && (
+            <p style={{ padding: props.padding }}>{props.line6}</p>
+          )}
+          {props.line7 && (
+            <p style={{ padding: props.padding }}>{props.line7}</p>
+          )}
+          {props.line8 && (
+            <p style={{ padding: props.padding }}>{props.line8}</p>
+          )}
+          {props.line9 && (
+            <p style={{ padding: props.padding }}>{props.line9}</p>
+          )}
+          {props.line10 && (
+            <p style={{ padding: props.padding }}>{props.line10}</p>
+          )}
         </div>
       </div>
     </div>

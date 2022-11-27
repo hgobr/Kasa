@@ -3,9 +3,13 @@
 .about {
   .container {
     @include pageMargin;
-  }
 
-  h1 {
-    padding: 15px;
+    .aboutContent {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 100px;
+    }
   }
 }

@@ -6,6 +6,8 @@ import Header from '../../components/header/Header';
 import './Home.scss';
 
 export default function Home() {
+  document.title = 'Kasa';
+
   return (
     <div className="home">
       <Header />

@@ -6,6 +6,8 @@
 
     color: $primaryRed;
 
+    margin-bottom: 280px;
+
     .housingDescription {
       display: flex;
       justify-content: space-between;
@@ -21,8 +23,8 @@
       .tagContainer {
         display: flex;
         gap: 15px;
-        margin-top: 20px;
-        margin-bottom: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
       }
 
       .housingHost {
@@ -54,10 +56,16 @@
 
       .hostRate {
         display: flex;
+
         justify-content: center;
         align-self: flex-end;
-        gap: 5px;
       }
+    }
+
+    .collapseContainer {
+      display: flex;
+      justify-content: space-between;
+      gap: 80px;
     }
   }
 }

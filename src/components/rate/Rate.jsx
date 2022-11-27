@@ -2,6 +2,7 @@ import React from 'react';
 import './Rate.scss';
 
 export default function Rate(props) {
+  const ratePatern = [1, 2, 3, 4, 5];
   const rateNumber = [];
 
   for (let i = 0; i < props.rate; i++) {
@@ -10,16 +11,16 @@ export default function Rate(props) {
 
   return (
     <div className="rate">
-      <div className="ratePaten">
-        <p>★</p>
-        <p>★</p>
-        <p>★</p>
-        <p>★</p>
-        <p>★</p>
+      <div className="ratePatern">
+        {ratePatern.map((item) => (
+          <div key={item}>
+            <p>★</p>
+          </div>
+        ))}
       </div>
       <div className="rateStar">
         {rateNumber.map((item) => (
-          <div className="rate" key={item}>
+          <div key={item}>
             <p>★</p>
           </div>
         ))}

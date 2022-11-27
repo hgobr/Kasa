@@ -1,9 +1,19 @@
 @import '../../styles/style.scss';
 
 .rate {
+  display: flex;
+  position: relative;
+
   color: #e3e3e3;
-  font-size: 30px;
+  font-size: 32px;
+
+  .ratePatern {
+    display: flex;
+  }
+
   .rateStar {
     color: $primaryRed;
+    display: flex;
+    position: absolute;
   }
 }

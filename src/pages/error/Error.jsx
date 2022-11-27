@@ -5,6 +5,8 @@ import Header from '../../components/header/Header';
 import './Error.scss';
 
 export default function Error() {
+  document.title = 'Erreur 404';
+
   return (
     <div className="error">
       <Header />
@@ -25,7 +27,7 @@ export default function Error() {
           </Link>
         </div>
       </div>
-      <Footer />
+      <Footer position="absolute" />
     </div>
   );
 }
