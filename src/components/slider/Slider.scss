@@ -18,6 +18,14 @@
     &:hover {
       transform: scale(1.8) rotate(-90deg);
     }
+
+    @media screen and (max-width: 425px) {
+      transform: scale(1.4) rotate(-90deg);
+
+      &:hover {
+        transform: scale(1.5) rotate(-90deg);
+      }
+    }
   }
 
   .rightArrow {
@@ -26,6 +34,14 @@
 
     &:hover {
       transform: scale(1.8) rotate(90deg);
+    }
+
+    @media screen and (max-width: 425px) {
+      transform: scale(1.4) rotate(90deg);
+
+      &:hover {
+        transform: scale(1.5) rotate(90deg);
+      }
     }
   }
 
@@ -36,6 +52,14 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 25px;
+
+    @media screen and (max-width: 768px) {
+      height: 300px;
+    }
+
+    @media screen and (max-width: 425px) {
+      border-radius: 15px;
+    }
   }
 
   .dotContainer {

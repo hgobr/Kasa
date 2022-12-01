@@ -6,15 +6,36 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 35px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
 
   img {
     width: 160px;
+
+    @media screen and (max-width: 768px) {
+      width: 130px;
+    }
+
+    @media screen and (max-width: 425px) {
+      width: 115px;
+    }
   }
 
   ul {
     display: flex;
     gap: 40px;
+
+    @media screen and (max-width: 768px) {
+      gap: 30px;
+    }
+
+    @media screen and (max-width: 425px) {
+      gap: 15px;
+    }
 
     li {
       transition: ease-in-out 0.3s;
@@ -23,6 +44,11 @@
       display: inline-block;
       font-weight: 600;
       font-size: 20px;
+
+      @media screen and (max-width: 425px) {
+        text-transform: uppercase;
+        font-size: 15px;
+      }
 
       &::after {
         content: '';

@@ -42,25 +42,8 @@ export default function Housing() {
           </div>
         </div>
         <div className="collapseContainer">
-          <Collapse
-            button="Description"
-            padding="25px"
-            line1={item.description}
-          />
-          <Collapse
-            button="Equipements"
-            padding="5px 20px"
-            line1={item.equipments[0]}
-            line2={item.equipments[1]}
-            line3={item.equipments[2]}
-            line4={item.equipments[3]}
-            line5={item.equipments[4]}
-            line6={item.equipments[5]}
-            line7={item.equipments[6]}
-            line8={item.equipments[7]}
-            line9={item.equipments[8]}
-            line10={item.equipments[9]}
-          />
+          <Collapse button="Description" type="description" />
+          <Collapse button="Equipements" type="equipements" />
         </div>
       </div>
       <Footer />

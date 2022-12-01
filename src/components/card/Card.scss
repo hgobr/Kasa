@@ -38,5 +38,13 @@
       font-size: 18px;
       width: 90%;
     }
+
+    @media screen and (max-width: 1024px) {
+      height: 250px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
 }

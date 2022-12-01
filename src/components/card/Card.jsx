@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import data from '../../assets/data/logements.json';
 import './Card.scss';
 
-export default function Card(props) {
+export default function Card() {
   return data.map((item) => {
     return (
       <div key={item.id} className="card">

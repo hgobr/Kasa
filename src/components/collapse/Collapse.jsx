@@ -1,9 +1,13 @@
 import React from 'react';
 import './Collapse.scss';
 import Angle from '../../assets/img/Angle.svg';
+import data from '../../assets/data/logements.json';
 
 export default function Collapse(props) {
   const [isOpen, setIsOpen] = React.useState(false);
+
+  const id = window.location.href.split('/').slice(-1)[0];
+  const item = data.find((item) => item.id === id);
 
   const onPress = (e) => {
     setIsOpen(!isOpen);
@@ -31,36 +35,10 @@ export default function Collapse(props) {
         />
         <button onClick={onPress}>{props.button}</button>
         <div className="content">
-          {props.line1 && (
-            <p style={{ padding: props.padding }}>{props.line1}</p>
-          )}
-          {props.line2 && (
-            <p style={{ padding: props.padding }}>{props.line2}</p>
-          )}
-          {props.line3 && (
-            <p style={{ padding: props.padding }}>{props.line3}</p>
-          )}
-          {props.line4 && (
-            <p style={{ padding: props.padding }}>{props.line4}</p>
-          )}
-          {props.line5 && (
-            <p style={{ padding: props.padding }}>{props.line5}</p>
-          )}
-          {props.line6 && (
-            <p style={{ padding: props.padding }}>{props.line6}</p>
-          )}
-          {props.line7 && (
-            <p style={{ padding: props.padding }}>{props.line7}</p>
-          )}
-          {props.line8 && (
-            <p style={{ padding: props.padding }}>{props.line8}</p>
-          )}
-          {props.line9 && (
-            <p style={{ padding: props.padding }}>{props.line9}</p>
-          )}
-          {props.line10 && (
-            <p style={{ padding: props.padding }}>{props.line10}</p>
-          )}
+          {props.type === 'equipements' &&
+            item.equipments.map((item) => <p key={item}>{item}</p>)}
+          {props.type === 'description' && <p>{item.description}</p>}
+          {props.type === 'about' && <p>{props.text}</p>}
         </div>
       </div>
     </div>
