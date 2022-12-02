@@ -4,6 +4,7 @@ import Header from '../../components/header/Header';
 import Slider from '../../components/slider/Slider';
 import Collapse from '../../components/collapse/Collapse';
 import './Housing.scss';
+import Error from '../../pages/error/Error';
 
 import data from '../../assets/data/logements.json';
 import Tag from '../../components/tag/Tag';
@@ -12,6 +13,11 @@ import Rate from '../../components/rate/Rate';
 export default function Housing() {
   const id = window.location.href.split('/').slice(-1)[0];
   const item = data.find((item) => item.id === id);
+
+  if (!item) {
+    return <Error />;
+  }
+
   document.title = item.title;
 
   return (

@@ -29,12 +29,16 @@ export default function Slider() {
 
   return (
     <div className="slider">
-      <div className="arrow leftArrow" onClick={goPrevious}>
-        <img src={Angle} alt="arrow" />
-      </div>
-      <div className="arrow rightArrow" onClick={goNext}>
-        <img src={Angle} alt="arrow" />
-      </div>
+      {item.pictures.length > 1 && (
+        <>
+          <div className="arrow leftArrow" onClick={goPrevious}>
+            <img src={Angle} alt="arrow" />
+          </div>
+          <div className="arrow rightArrow" onClick={goNext}>
+            <img src={Angle} alt="arrow" />
+          </div>
+        </>
+      )}
       <div
         className="sliderContainer"
         style={{ backgroundImage: `url(${item.pictures[currentIndex]})` }}
