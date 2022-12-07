@@ -27,7 +27,7 @@ export default function Error() {
           </Link>
         </div>
       </div>
-      <Footer position="absolute" />
+      <Footer />
     </div>
   );
 }

@@ -23,10 +23,6 @@ export default function Slider() {
     setCurrentIndex(index);
   };
 
-  const goSlide = (index) => {
-    setCurrentIndex(index);
-  };
-
   return (
     <div className="slider">
       {item.pictures.length > 1 && (
@@ -44,11 +40,9 @@ export default function Slider() {
         style={{ backgroundImage: `url(${item.pictures[currentIndex]})` }}
       ></div>
       <div className="dotContainer">
-        {item.pictures.map((slide, index) => (
-          <div key={index} className="dot" onClick={() => goSlide(index)}>
-            {currentIndex === index ? '●' : '○'}
-          </div>
-        ))}
+        <p>
+          {currentIndex + 1}/{item.pictures.length}
+        </p>
       </div>
     </div>
   );
